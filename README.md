@@ -28,7 +28,7 @@ Clone the repository: git clone https://github.com/Suyash-0007/WeatherWidget.git
 
 cd WeatherWidget
 
-Install dependencies:npm install
+Install dependencies: npm install
 
 Environment Variables:Create a .env file in the root directory and add your API key
 
