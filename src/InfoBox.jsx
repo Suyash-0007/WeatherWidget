@@ -4,16 +4,14 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
+import './infobox.css'
 
-export default function InfoBox(){
+export default function InfoBox({cityInfo}){
 
-    let info={
-        city:"Pune",
-        temp:22,
-        tempMax:27,
-        tempMin:19
-    }
+   API_KEY:"K7EbRdnZtqu8s6aZpr8hfBrJA2E9cUCHQyVU66lY";
+   
     return <div className="InfoBox">
+    <div className="">
 
          <Card sx={{ maxWidth: 345 }}>
       <CardMedia
@@ -23,10 +21,10 @@ export default function InfoBox(){
       />
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
-          {info.city}
+          {cityInfo.city}
         </Typography>
-        <Typography variant="body2" sx={{ color: 'text.secondary' }}>
-          <div>Temp:{info.temp}</div>
+        <Typography variant="body2" sx={{ color: 'text.secondary' }} component={'span'}>
+          <div>Temp:{cityInfo.temp}</div>
         </Typography>
       </CardContent>
       <CardActions>
@@ -34,5 +32,6 @@ export default function InfoBox(){
         <Button size="small">Learn More</Button>
       </CardActions>
     </Card>
+    </div>
     </div>
 }
