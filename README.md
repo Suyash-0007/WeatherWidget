@@ -1,4 +1,5 @@
-# WeatherWidget App: A sleek, responsive weather dashboard built with React and Vite.
+# WeatherWidget App:
+## A sleek, responsive weather dashboard built with React and Vite.
 
 
 ## This application fetches real-time weather data to provide users with current conditions and forecasts.
